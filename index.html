@@ -2,448 +2,541 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EduPlan Namibia — Teacher Needs Survey</title>
-    <link rel="stylesheet" href="styles.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EduPlan Namibia — Teacher Needs Survey</title>
+        <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <div class="container">
-        <div class="header">
-            <div class="logo-card">
-                <img src="data:image/jpeg;base64,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"
-                    alt="EduPlan Namibia Logo" class="logo-img">
-            </div>
-            <h2>Teacher Needs Survey</h2>
-            <p class="subtitle">Help us build the tools you actually need. Your answers shape what we create.</p>
+        <div class="container">
+                <div class="header">
+                        <div class="logo-card">
+                                <img src="data:image/jpeg;base64,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"
+                                        alt="EduPlan Namibia Logo" class="logo-img">
+                        </div>
+                        <h2>Teacher Needs Survey</h2>
+                        <p class="subtitle">Help us build the tools you actually need. Your answers shape what we
+                                create.</p>
+                </div>
+
+                <!-- PRIVACY DISCLAIMER -->
+                <div class="disclaimer">
+                        <div class="disclaimer-icon">🔒</div>
+                        <div class="disclaimer-text">
+                                <strong>Your privacy is protected.</strong>
+                                This survey is <strong>completely anonymous</strong>. We do not collect your name,
+                                email address, phone number, or any information that could identify you.
+                                Your responses are used only to improve EduPlan for Namibian teachers and are
+                                <strong>never sold or shared with third parties</strong>. There is no risk to you
+                                in taking part — you are simply helping shape a tool built for teachers, by people
+                                who understand the classroom.
+                        </div>
+                </div>
+
+                <div class="progress-container">
+                        <div class="progress-bar">
+                                <div class="progress-fill" id="progressFill"></div>
+                        </div>
+                        <p class="progress-text"><span id="currentQuestion">0</span> of <span
+                                        id="totalQuestions">23</span> answered
+                        </p>
+                </div>
+
+                <form id="surveyForm" class="survey-form">
+
+                        <!-- SECTION 1: ABOUT YOU (anonymous) -->
+                        <div class="question-container" id="q1">
+                                <div class="question-header"><span class="section-label">Section 1 of 6 · About
+                                                You</span></div>
+                                <h2>Which region do you teach in?</h2>
+                                <div class="form-group">
+                                        <select name="q1_region" class="select" required>
+                                                <option value="">Select your region...</option>
+                                                <option>Zambezi</option>
+                                                <option>Erongo</option>
+                                                <option>Hardap</option>
+                                                <option>//Karas</option>
+                                                <option>Kavango East</option>
+                                                <option>Kavango West</option>
+                                                <option>Khomas</option>
+                                                <option>Kunene</option>
+                                                <option>Ohangwena</option>
+                                                <option>Omaheke</option>
+                                                <option>Omusati</option>
+                                                <option>Oshana</option>
+                                                <option>Oshikoto</option>
+                                                <option>Otjozondjupa</option>
+                                        </select>
+                                </div>
+                        </div>
+
+                        <div class="question-container" id="q2">
+                                <h2>What type of school do you teach at?</h2>
+                                <div class="form-group">
+                                        <label class="radio-option"><input type="radio" name="q2_schooltype"
+                                                        value="government" required><span class="radio-text">Government
+                                                        school</span></label>
+                                        <label class="radio-option"><input type="radio" name="q2_schooltype"
+                                                        value="private"><span class="radio-text">Private
+                                                        school</span></label>
+                                        <label class="radio-option"><input type="radio" name="q2_schooltype"
+                                                        value="combined"><span class="radio-text">Combined /
+                                                        Mixed</span></label>
+                                </div>
+                        </div>
+
+                        <div class="question-container" id="q3">
+                                <h2>Which phase do you mostly teach?</h2>
+                                <div class="form-group">
+                                        <label class="radio-option"><input type="radio" name="q3_grade" value="prelower"
+                                                        required><span class="radio-text">Pre-Primary / Lower Primary
+                                                        (Pre to Grade 3)</span></label>
+                                        <label class="radio-option"><input type="radio" name="q3_grade"
+                                                        value="upperprimary"><span class="radio-text">Upper Primary
+                                                        (Grade 4-7)</span></label>
+                                        <label class="radio-option"><input type="radio" name="q3_grade"
+                                                        value="junior"><span class="radio-text">Junior Secondary (Grade
+                                                        8-9)</span></label>
+                                        <label class="radio-option"><input type="radio" name="q3_grade"
+                                                        value="senior"><span class="radio-text">Senior Secondary (Grade
+                                                        10-12)</span></label>
+                                        <label class="radio-option"><input type="radio" name="q3_grade"
+                                                        value="multiple"><span class="radio-text">Multiple
+                                                        phases</span></label>
+                                </div>
+                        </div>
+
+                        <div class="question-container" id="q4">
+                                <h2>How many years have you been teaching?</h2>
+                                <div class="form-group">
+                                        <label class="radio-option"><input type="radio" name="q4_experience" value="0-2"
+                                                        required><span class="radio-text">0-2 years</span></label>
+                                        <label class="radio-option"><input type="radio" name="q4_experience"
+                                                        value="3-5"><span class="radio-text">3-5 years</span></label>
+                                        <label class="radio-option"><input type="radio" name="q4_experience"
+                                                        value="6-10"><span class="radio-text">6-10 years</span></label>
+                                        <label class="radio-option"><input type="radio" name="q4_experience"
+                                                        value="10+"><span class="radio-text">More than 10
+                                                        years</span></label>
+                                </div>
+                        </div>
+
+                        <!-- SECTION 2: WORKLOAD -->
+                        <div class="question-container" id="q5">
+                                <div class="question-header"><span class="section-label">Section 2 of 6 · Your
+                                                Workload</span></div>
+                                <h2>On a normal week, how many hours do you spend on admin (planning, marking, reports)
+                                        OUTSIDE of
+                                        teaching?</h2>
+                                <div class="form-group">
+                                        <label class="radio-option"><input type="radio" name="q5_adminhours"
+                                                        value="under5" required><span class="radio-text">Less than 5
+                                                        hours</span></label>
+                                        <label class="radio-option"><input type="radio" name="q5_adminhours"
+                                                        value="5-10"><span class="radio-text">5-10 hours</span></label>
+                                        <label class="radio-option"><input type="radio" name="q5_adminhours"
+                                                        value="11-15"><span class="radio-text">11-15
+                                                        hours</span></label>
+                                        <label class="radio-option"><input type="radio" name="q5_adminhours"
+                                                        value="16-20"><span class="radio-text">16-20
+                                                        hours</span></label>
+                                        <label class="radio-option"><input type="radio" name="q5_adminhours"
+                                                        value="20+"><span class="radio-text">More than 20
+                                                        hours</span></label>
+                                </div>
+                        </div>
+
+                        <div class="question-container" id="q6">
+                                <h2>Which of these tasks take you the MOST time? <span class="optional">(choose up to
+                                                3)</span></h2>
+                                <div class="form-group">
+                                        <label class="checkbox-option"><input type="checkbox" name="q6_tasks"
+                                                        value="lesson_plans"><span class="checkbox-text">Writing lesson
+                                                        plans</span></label>
+                                        <label class="checkbox-option"><input type="checkbox" name="q6_tasks"
+                                                        value="schemes"><span class="checkbox-text">Schemes of work /
+                                                        preparation files</span></label>
+                                        <label class="checkbox-option"><input type="checkbox" name="q6_tasks"
+                                                        value="marking"><span class="checkbox-text">Marking and
+                                                        recording marks</span></label>
+                                        <label class="checkbox-option"><input type="checkbox" name="q6_tasks"
+                                                        value="ca"><span class="checkbox-text">Continuous Assessment
+                                                        (CA) calculations</span></label>
+                                        <label class="checkbox-option"><input type="checkbox" name="q6_tasks"
+                                                        value="reports"><span class="checkbox-text">Writing term reports
+                                                        / report cards</span></label>
+                                        <label class="checkbox-option"><input type="checkbox" name="q6_tasks"
+                                                        value="timetable"><span
+                                                        class="checkbox-text">Timetables</span></label>
+                                        <label class="checkbox-option"><input type="checkbox" name="q6_tasks"
+                                                        value="attendance"><span class="checkbox-text">Attendance
+                                                        records</span></label>
+                                </div>
+                        </div>
+
+                        <div class="question-container" id="q7">
+                                <h2>How do you currently prepare your lesson plans?</h2>
+                                <div class="form-group">
+                                        <label class="radio-option"><input type="radio" name="q7_planning"
+                                                        value="byhand" required><span class="radio-text">By hand
+                                                        (written in a book)</span></label>
+                                        <label class="radio-option"><input type="radio" name="q7_planning"
+                                                        value="word"><span class="radio-text">Typed in Word /
+                                                        similar</span></label>
+                                        <label class="radio-option"><input type="radio" name="q7_planning"
+                                                        value="reuse"><span class="radio-text">I reuse old plans every
+                                                        year</span></label>
+                                        <label class="radio-option"><input type="radio" name="q7_planning"
+                                                        value="none"><span class="radio-text">I don't really prepare
+                                                        written plans</span></label>
+                                </div>
+                        </div>
+
+                        <div class="question-container" id="q8">
+                                <h2>How do you currently calculate and record marks / CA?</h2>
+                                <div class="form-group">
+                                        <label class="radio-option"><input type="radio" name="q8_marks" value="byhand"
+                                                        required><span class="radio-text">By hand with a
+                                                        calculator</span></label>
+                                        <label class="radio-option"><input type="radio" name="q8_marks"
+                                                        value="excel"><span class="radio-text">Excel spreadsheet I made
+                                                        myself</span></label>
+                                        <label class="radio-option"><input type="radio" name="q8_marks"
+                                                        value="school_system"><span class="radio-text">A system the
+                                                        school provides</span></label>
+                                        <label class="radio-option"><input type="radio" name="q8_marks"
+                                                        value="mixed"><span class="radio-text">A mix of
+                                                        methods</span></label>
+                                </div>
+                        </div>
+
+                        <div class="question-container" id="q9">
+                                <h2>How do you currently produce term reports / report cards?</h2>
+                                <div class="form-group">
+                                        <label class="radio-option"><input type="radio" name="q9_reports" value="byhand"
+                                                        required><span class="radio-text">By hand</span></label>
+                                        <label class="radio-option"><input type="radio" name="q9_reports"
+                                                        value="word_excel"><span class="radio-text">Word / Excel
+                                                        templates</span></label>
+                                        <label class="radio-option"><input type="radio" name="q9_reports"
+                                                        value="school_system"><span class="radio-text">School's
+                                                        reporting system</span></label>
+                                        <label class="radio-option"><input type="radio" name="q9_reports"
+                                                        value="other"><span class="radio-text">Other</span></label>
+                                </div>
+                        </div>
+
+                        <div class="question-container" id="q10">
+                                <h2>What frustrates you MOST about your current admin work?</h2>
+                                <div class="form-group">
+                                        <textarea name="q10_frustration" rows="3" class="textarea"
+                                                placeholder="Tell us in your own words..."></textarea>
+                                </div>
+                        </div>
+
+                        <!-- SECTION 3: FEATURE PRIORITIES -->
+                        <div class="question-container" id="q11">
+                                <div class="question-header"><span class="section-label">Section 3 of 6 · What We Should
+                                                Build</span>
+                                </div>
+                                <h2>How useful would EACH of these be to you? <span class="optional">(rate all
+                                                five)</span></h2>
+
+                                <div class="matrix-row">
+                                        <p class="matrix-label">Automatic lesson plan generator</p>
+                                        <div class="matrix-options">
+                                                <label><input type="radio" name="q11_lesson" value="not" required> Not
+                                                        useful</label>
+                                                <label><input type="radio" name="q11_lesson" value="somewhat">
+                                                        Somewhat</label>
+                                                <label><input type="radio" name="q11_lesson" value="very"> Very
+                                                        useful</label>
+                                        </div>
+                                </div>
+                                <div class="matrix-row">
+                                        <p class="matrix-label">Schemes of work builder</p>
+                                        <div class="matrix-options">
+                                                <label><input type="radio" name="q11_schemes" value="not" required> Not
+                                                        useful</label>
+                                                <label><input type="radio" name="q11_schemes" value="somewhat">
+                                                        Somewhat</label>
+                                                <label><input type="radio" name="q11_schemes" value="very"> Very
+                                                        useful</label>
+                                        </div>
+                                </div>
+                                <div class="matrix-row">
+                                        <p class="matrix-label">Marks &amp; CA analysis</p>
+                                        <div class="matrix-options">
+                                                <label><input type="radio" name="q11_marks" value="not" required> Not
+                                                        useful</label>
+                                                <label><input type="radio" name="q11_marks" value="somewhat">
+                                                        Somewhat</label>
+                                                <label><input type="radio" name="q11_marks" value="very"> Very
+                                                        useful</label>
+                                        </div>
+                                </div>
+                                <div class="matrix-row">
+                                        <p class="matrix-label">Automatic report card generation</p>
+                                        <div class="matrix-options">
+                                                <label><input type="radio" name="q11_reports" value="not" required> Not
+                                                        useful</label>
+                                                <label><input type="radio" name="q11_reports" value="somewhat">
+                                                        Somewhat</label>
+                                                <label><input type="radio" name="q11_reports" value="very"> Very
+                                                        useful</label>
+                                        </div>
+                                </div>
+                                <div class="matrix-row">
+                                        <p class="matrix-label">Timetable generator</p>
+                                        <div class="matrix-options">
+                                                <label><input type="radio" name="q11_timetable" value="not" required>
+                                                        Not useful</label>
+                                                <label><input type="radio" name="q11_timetable" value="somewhat">
+                                                        Somewhat</label>
+                                                <label><input type="radio" name="q11_timetable" value="very"> Very
+                                                        useful</label>
+                                        </div>
+                                </div>
+                        </div>
+
+                        <div class="question-container" id="q12">
+                                <h2>If we could only release ONE feature first, which should it be?</h2>
+                                <div class="form-group">
+                                        <label class="radio-option"><input type="radio" name="q12_topfeature"
+                                                        value="lesson" required><span class="radio-text">Lesson plan
+                                                        generator</span></label>
+                                        <label class="radio-option"><input type="radio" name="q12_topfeature"
+                                                        value="schemes"><span class="radio-text">Schemes of work
+                                                        builder</span></label>
+                                        <label class="radio-option"><input type="radio" name="q12_topfeature"
+                                                        value="marks"><span class="radio-text">Marks &amp; CA
+                                                        analysis</span></label>
+                                        <label class="radio-option"><input type="radio" name="q12_topfeature"
+                                                        value="reports"><span class="radio-text">Report card
+                                                        generation</span></label>
+                                        <label class="radio-option"><input type="radio" name="q12_topfeature"
+                                                        value="timetable"><span class="radio-text">Timetable
+                                                        generator</span></label>
+                                </div>
+                        </div>
+
+                        <div class="question-container" id="q13">
+                                <h2>Is there any OTHER tool or feature you wish existed?</h2>
+                                <div class="form-group">
+                                        <textarea name="q13_otherfeatures" rows="3" class="textarea"
+                                                placeholder="Your ideas help us..."></textarea>
+                                </div>
+                        </div>
+
+                        <!-- SECTION 4: ACCESS & TECHNOLOGY -->
+                        <div class="question-container" id="q14">
+                                <div class="question-header"><span class="section-label">Section 4 of 6 · Access &amp;
+                                                Technology</span>
+                                </div>
+                                <h2>Do you have reliable internet at school?</h2>
+                                <div class="form-group">
+                                        <label class="radio-option"><input type="radio" name="q14_internet" value="yes"
+                                                        required><span class="radio-text">Yes, reliable</span></label>
+                                        <label class="radio-option"><input type="radio" name="q14_internet"
+                                                        value="sometimes"><span class="radio-text">Sometimes /
+                                                        unreliable</span></label>
+                                        <label class="radio-option"><input type="radio" name="q14_internet"
+                                                        value="no"><span class="radio-text">No internet at
+                                                        school</span></label>
+                                        <label class="radio-option"><input type="radio" name="q14_internet"
+                                                        value="own_data"><span class="radio-text">Only my own mobile
+                                                        data</span></label>
+                                </div>
+                        </div>
+
+                        <div class="question-container" id="q15">
+                                <h2>Which device would you MOST likely use EduPlan on?</h2>
+                                <div class="form-group">
+                                        <label class="radio-option"><input type="radio" name="q15_device"
+                                                        value="smartphone" required><span
+                                                        class="radio-text">Smartphone</span></label>
+                                        <label class="radio-option"><input type="radio" name="q15_device"
+                                                        value="laptop"><span class="radio-text">Laptop</span></label>
+                                        <label class="radio-option"><input type="radio" name="q15_device"
+                                                        value="tablet"><span class="radio-text">Tablet</span></label>
+                                        <label class="radio-option"><input type="radio" name="q15_device"
+                                                        value="school_computer"><span class="radio-text">School
+                                                        computer</span></label>
+                                </div>
+                        </div>
+
+                        <div class="question-container" id="q16">
+                                <h2>Would you need EduPlan to work OFFLINE (without internet)?</h2>
+                                <div class="form-group">
+                                        <label class="radio-option"><input type="radio" name="q16_offline"
+                                                        value="essential" required><span class="radio-text">Yes —
+                                                        offline is essential for me</span></label>
+                                        <label class="radio-option"><input type="radio" name="q16_offline"
+                                                        value="nice"><span class="radio-text">Nice to have, but not
+                                                        essential</span></label>
+                                        <label class="radio-option"><input type="radio" name="q16_offline"
+                                                        value="no"><span class="radio-text">No — I always have
+                                                        internet</span></label>
+                                </div>
+                        </div>
+
+                        <!-- SECTION 5: VALUE & ADOPTION -->
+                        <div class="question-container" id="q17">
+                                <div class="question-header"><span class="section-label">Section 5 of 6 · Value &amp;
+                                                Adoption</span>
+                                </div>
+                                <h2>What would feel like a FAIR price per month for a tool that saves you hours every
+                                        week?</h2>
+                                <div class="form-group">
+                                        <label class="radio-option"><input type="radio" name="q17_pay" value="free"
+                                                        required><span class="radio-text">Only if it's
+                                                        free</span></label>
+                                        <label class="radio-option"><input type="radio" name="q17_pay" value="50"><span
+                                                        class="radio-text">Up to N$50</span></label>
+                                        <label class="radio-option"><input type="radio" name="q17_pay" value="100"><span
+                                                        class="radio-text">N$100</span></label>
+                                        <label class="radio-option"><input type="radio" name="q17_pay"
+                                                        value="150-200"><span
+                                                        class="radio-text">N$150-200</span></label>
+                                        <label class="radio-option"><input type="radio" name="q17_pay"
+                                                        value="200+"><span class="radio-text">N$200+</span></label>
+                                </div>
+                        </div>
+
+                        <div class="question-container" id="q18">
+                                <h2>Do you think your SCHOOL would pay for it on your behalf?</h2>
+                                <div class="form-group">
+                                        <label class="radio-option"><input type="radio" name="q18_schoolpay"
+                                                        value="definitely" required><span
+                                                        class="radio-text">Definitely</span></label>
+                                        <label class="radio-option"><input type="radio" name="q18_schoolpay"
+                                                        value="maybe"><span class="radio-text">Maybe</span></label>
+                                        <label class="radio-option"><input type="radio" name="q18_schoolpay"
+                                                        value="unlikely"><span
+                                                        class="radio-text">Unlikely</span></label>
+                                        <label class="radio-option"><input type="radio" name="q18_schoolpay"
+                                                        value="dontknow"><span class="radio-text">I don't
+                                                        know</span></label>
+                                </div>
+                        </div>
+
+                        <div class="question-container" id="q19">
+                                <h2>If EduPlan were ready today, how likely are you to start using it?</h2>
+                                <div class="form-group rating-group">
+                                        <label class="rating-option"><input type="radio" name="q19_uselikely"
+                                                        value="very_likely" required><span class="rating-text">Very
+                                                        likely</span></label>
+                                        <label class="rating-option"><input type="radio" name="q19_uselikely"
+                                                        value="likely"><span class="rating-text">Likely</span></label>
+                                        <label class="rating-option"><input type="radio" name="q19_uselikely"
+                                                        value="unsure"><span class="rating-text">Unsure</span></label>
+                                        <label class="rating-option"><input type="radio" name="q19_uselikely"
+                                                        value="unlikely"><span
+                                                        class="rating-text">Unlikely</span></label>
+                                </div>
+                        </div>
+
+                        <div class="question-container" id="q20">
+                                <h2>What might STOP you from using EduPlan? <span class="optional">(select all that
+                                                apply)</span></h2>
+                                <div class="form-group">
+                                        <label class="checkbox-option"><input type="checkbox" name="q20_barriers"
+                                                        value="cost"><span class="checkbox-text">Cost</span></label>
+                                        <label class="checkbox-option"><input type="checkbox" name="q20_barriers"
+                                                        value="internet"><span class="checkbox-text">No internet /
+                                                        data</span></label>
+                                        <label class="checkbox-option"><input type="checkbox" name="q20_barriers"
+                                                        value="device"><span class="checkbox-text">No suitable
+                                                        device</span></label>
+                                        <label class="checkbox-option"><input type="checkbox" name="q20_barriers"
+                                                        value="tech_confidence"><span class="checkbox-text">Not
+                                                        confident with
+                                                        technology</span></label>
+                                        <label class="checkbox-option"><input type="checkbox" name="q20_barriers"
+                                                        value="training"><span class="checkbox-text">Would need
+                                                        training</span></label>
+                                        <label class="checkbox-option"><input type="checkbox" name="q20_barriers"
+                                                        value="school"><span class="checkbox-text">School wouldn't allow
+                                                        it</span></label>
+                                        <label class="checkbox-option"><input type="checkbox" name="q20_barriers"
+                                                        value="trust"><span class="checkbox-text">Not sure I'd trust it
+                                                        yet</span></label>
+                                        <label class="checkbox-option"><input type="checkbox" name="q20_barriers"
+                                                        value="none"><span class="checkbox-text">Nothing — I'm
+                                                        ready</span></label>
+                                </div>
+                        </div>
+
+                        <div class="question-container" id="q21">
+                                <h2>Would you recommend a tool like this to other teachers?</h2>
+                                <div class="form-group rating-group">
+                                        <label class="rating-option"><input type="radio" name="q21_recommend"
+                                                        value="definitely" required><span
+                                                        class="rating-text">Definitely</span></label>
+                                        <label class="rating-option"><input type="radio" name="q21_recommend"
+                                                        value="probably"><span
+                                                        class="rating-text">Probably</span></label>
+                                        <label class="rating-option"><input type="radio" name="q21_recommend"
+                                                        value="maybe"><span class="rating-text">Maybe</span></label>
+                                        <label class="rating-option"><input type="radio" name="q21_recommend"
+                                                        value="no"><span class="rating-text">No</span></label>
+                                </div>
+                        </div>
+
+                        <!-- SECTION 6: PILOT & FINAL -->
+                        <div class="question-container" id="q22">
+                                <div class="question-header"><span class="section-label">Section 6 of 6 · Almost
+                                                Done</span></div>
+                                <h2>We're planning a FREE early pilot. Would you be interested in joining one day?</h2>
+                                <p class="note">This stays anonymous. If you'd like to take part, simply contact us
+                                        directly at
+                                        <strong>eduplannamibia@yahoo.com</strong> or <strong>+264 81 864 7106</strong> —
+                                        we
+                                        never capture your
+                                        details here.
+                                </p>
+                                <div class="form-group">
+                                        <label class="radio-option"><input type="radio" name="q22_pilot" value="yes"
+                                                        required><span class="radio-text">Yes, I'm very
+                                                        interested</span></label>
+                                        <label class="radio-option"><input type="radio" name="q22_pilot"
+                                                        value="maybe"><span class="radio-text">Maybe — I'd like to know
+                                                        more</span></label>
+                                        <label class="radio-option"><input type="radio" name="q22_pilot"
+                                                        value="no"><span class="radio-text">No thanks</span></label>
+                                </div>
+                        </div>
+
+                        <div class="question-container" id="q23">
+                                <h2>Any final comments for the EduPlan team?</h2>
+                                <div class="form-group">
+                                        <textarea name="q23_comments" rows="3" class="textarea"
+                                                placeholder="Anything else you'd like us to know..."></textarea>
+                                </div>
+                        </div>
+
+                        <div class="form-actions">
+                                <button type="submit" class="btn-submit" id="submitBtn">Submit Survey</button>
+                                <p class="form-hint">Anonymous &amp; secure · No personal information is collected.</p>
+                        </div>
+                </form>
+
+                <div class="success-message" id="successMessage" style="display:none;">
+                        <div class="success-content">
+                                <h2>✓ Thank You!</h2>
+                                <p>Your anonymous responses have been received.</p>
+                                <p>You are helping build a tool made for Namibian teachers, by people who understand the
+                                        classroom.</p>
+                                <p style="margin-top:20px; font-size:14px; color:#666;">
+                                        EduPlan Namibia · Lifa-Kay Investment CC<br>
+                                        https://eduplan.linusite.com<br>
+                                        +264 81 864 7106 · eduplannamibia@yahoo.com
+                                </p>
+                        </div>
+                </div>
         </div>
-
-        <!-- PRIVACY DISCLAIMER -->
-        <div class="disclaimer">
-            <div class="disclaimer-icon">🔒</div>
-            <div class="disclaimer-text">
-                <strong>Your privacy is protected.</strong>
-                This survey is <strong>completely anonymous</strong>. We do not collect your name,
-                email address, phone number, or any information that could identify you.
-                Your responses are used only to improve EduPlan for Namibian teachers and are
-                <strong>never sold or shared with third parties</strong>. There is no risk to you
-                in taking part — you are simply helping shape a tool built for teachers, by people
-                who understand the classroom.
-            </div>
-        </div>
-
-        <div class="progress-container">
-            <div class="progress-bar">
-                <div class="progress-fill" id="progressFill"></div>
-            </div>
-            <p class="progress-text"><span id="currentQuestion">0</span> of <span id="totalQuestions">23</span> answered
-            </p>
-        </div>
-
-        <form id="surveyForm" class="survey-form">
-
-            <!-- SECTION 1: ABOUT YOU (anonymous) -->
-            <div class="question-container" id="q1">
-                <div class="question-header"><span class="section-label">Section 1 of 6 · About You</span></div>
-                <h2>Which region do you teach in?</h2>
-                <div class="form-group">
-                    <select name="q1_region" class="select" required>
-                        <option value="">Select your region...</option>
-                        <option>Zambezi</option>
-                        <option>Erongo</option>
-                        <option>Hardap</option>
-                        <option>//Karas</option>
-                        <option>Kavango East</option>
-                        <option>Kavango West</option>
-                        <option>Khomas</option>
-                        <option>Kunene</option>
-                        <option>Ohangwena</option>
-                        <option>Omaheke</option>
-                        <option>Omusati</option>
-                        <option>Oshana</option>
-                        <option>Oshikoto</option>
-                        <option>Otjozondjupa</option>
-                    </select>
-                </div>
-            </div>
-
-            <div class="question-container" id="q2">
-                <h2>What type of school do you teach at?</h2>
-                <div class="form-group">
-                    <label class="radio-option"><input type="radio" name="q2_schooltype" value="government"
-                            required><span class="radio-text">Government school</span></label>
-                    <label class="radio-option"><input type="radio" name="q2_schooltype" value="private"><span
-                            class="radio-text">Private school</span></label>
-                    <label class="radio-option"><input type="radio" name="q2_schooltype" value="combined"><span
-                            class="radio-text">Combined / Mixed</span></label>
-                </div>
-            </div>
-
-            <div class="question-container" id="q3">
-                <h2>Which phase do you mostly teach?</h2>
-                <div class="form-group">
-                    <label class="radio-option"><input type="radio" name="q3_grade" value="prelower" required><span
-                            class="radio-text">Pre-Primary / Lower Primary (Pre to Grade 3)</span></label>
-                    <label class="radio-option"><input type="radio" name="q3_grade" value="upperprimary"><span
-                            class="radio-text">Upper Primary (Grade 4-7)</span></label>
-                    <label class="radio-option"><input type="radio" name="q3_grade" value="junior"><span
-                            class="radio-text">Junior Secondary (Grade 8-9)</span></label>
-                    <label class="radio-option"><input type="radio" name="q3_grade" value="senior"><span
-                            class="radio-text">Senior Secondary (Grade 10-12)</span></label>
-                    <label class="radio-option"><input type="radio" name="q3_grade" value="multiple"><span
-                            class="radio-text">Multiple phases</span></label>
-                </div>
-            </div>
-
-            <div class="question-container" id="q4">
-                <h2>How many years have you been teaching?</h2>
-                <div class="form-group">
-                    <label class="radio-option"><input type="radio" name="q4_experience" value="0-2" required><span
-                            class="radio-text">0-2 years</span></label>
-                    <label class="radio-option"><input type="radio" name="q4_experience" value="3-5"><span
-                            class="radio-text">3-5 years</span></label>
-                    <label class="radio-option"><input type="radio" name="q4_experience" value="6-10"><span
-                            class="radio-text">6-10 years</span></label>
-                    <label class="radio-option"><input type="radio" name="q4_experience" value="10+"><span
-                            class="radio-text">More than 10 years</span></label>
-                </div>
-            </div>
-
-            <!-- SECTION 2: WORKLOAD -->
-            <div class="question-container" id="q5">
-                <div class="question-header"><span class="section-label">Section 2 of 6 · Your Workload</span></div>
-                <h2>On a normal week, how many hours do you spend on admin (planning, marking, reports) OUTSIDE of
-                    teaching?</h2>
-                <div class="form-group">
-                    <label class="radio-option"><input type="radio" name="q5_adminhours" value="under5" required><span
-                            class="radio-text">Less than 5 hours</span></label>
-                    <label class="radio-option"><input type="radio" name="q5_adminhours" value="5-10"><span
-                            class="radio-text">5-10 hours</span></label>
-                    <label class="radio-option"><input type="radio" name="q5_adminhours" value="11-15"><span
-                            class="radio-text">11-15 hours</span></label>
-                    <label class="radio-option"><input type="radio" name="q5_adminhours" value="16-20"><span
-                            class="radio-text">16-20 hours</span></label>
-                    <label class="radio-option"><input type="radio" name="q5_adminhours" value="20+"><span
-                            class="radio-text">More than 20 hours</span></label>
-                </div>
-            </div>
-
-            <div class="question-container" id="q6">
-                <h2>Which of these tasks take you the MOST time? <span class="optional">(choose up to 3)</span></h2>
-                <div class="form-group">
-                    <label class="checkbox-option"><input type="checkbox" name="q6_tasks" value="lesson_plans"><span
-                            class="checkbox-text">Writing lesson plans</span></label>
-                    <label class="checkbox-option"><input type="checkbox" name="q6_tasks" value="schemes"><span
-                            class="checkbox-text">Schemes of work / preparation files</span></label>
-                    <label class="checkbox-option"><input type="checkbox" name="q6_tasks" value="marking"><span
-                            class="checkbox-text">Marking and recording marks</span></label>
-                    <label class="checkbox-option"><input type="checkbox" name="q6_tasks" value="ca"><span
-                            class="checkbox-text">Continuous Assessment (CA) calculations</span></label>
-                    <label class="checkbox-option"><input type="checkbox" name="q6_tasks" value="reports"><span
-                            class="checkbox-text">Writing term reports / report cards</span></label>
-                    <label class="checkbox-option"><input type="checkbox" name="q6_tasks" value="timetable"><span
-                            class="checkbox-text">Timetables</span></label>
-                    <label class="checkbox-option"><input type="checkbox" name="q6_tasks" value="attendance"><span
-                            class="checkbox-text">Attendance records</span></label>
-                </div>
-            </div>
-
-            <div class="question-container" id="q7">
-                <h2>How do you currently prepare your lesson plans?</h2>
-                <div class="form-group">
-                    <label class="radio-option"><input type="radio" name="q7_planning" value="byhand" required><span
-                            class="radio-text">By hand (written in a book)</span></label>
-                    <label class="radio-option"><input type="radio" name="q7_planning" value="word"><span
-                            class="radio-text">Typed in Word / similar</span></label>
-                    <label class="radio-option"><input type="radio" name="q7_planning" value="reuse"><span
-                            class="radio-text">I reuse old plans every year</span></label>
-                    <label class="radio-option"><input type="radio" name="q7_planning" value="none"><span
-                            class="radio-text">I don't really prepare written plans</span></label>
-                </div>
-            </div>
-
-            <div class="question-container" id="q8">
-                <h2>How do you currently calculate and record marks / CA?</h2>
-                <div class="form-group">
-                    <label class="radio-option"><input type="radio" name="q8_marks" value="byhand" required><span
-                            class="radio-text">By hand with a calculator</span></label>
-                    <label class="radio-option"><input type="radio" name="q8_marks" value="excel"><span
-                            class="radio-text">Excel spreadsheet I made myself</span></label>
-                    <label class="radio-option"><input type="radio" name="q8_marks" value="school_system"><span
-                            class="radio-text">A system the school provides</span></label>
-                    <label class="radio-option"><input type="radio" name="q8_marks" value="mixed"><span
-                            class="radio-text">A mix of methods</span></label>
-                </div>
-            </div>
-
-            <div class="question-container" id="q9">
-                <h2>How do you currently produce term reports / report cards?</h2>
-                <div class="form-group">
-                    <label class="radio-option"><input type="radio" name="q9_reports" value="byhand" required><span
-                            class="radio-text">By hand</span></label>
-                    <label class="radio-option"><input type="radio" name="q9_reports" value="word_excel"><span
-                            class="radio-text">Word / Excel templates</span></label>
-                    <label class="radio-option"><input type="radio" name="q9_reports" value="school_system"><span
-                            class="radio-text">School's reporting system</span></label>
-                    <label class="radio-option"><input type="radio" name="q9_reports" value="other"><span
-                            class="radio-text">Other</span></label>
-                </div>
-            </div>
-
-            <div class="question-container" id="q10">
-                <h2>What frustrates you MOST about your current admin work?</h2>
-                <div class="form-group">
-                    <textarea name="q10_frustration" rows="3" class="textarea"
-                        placeholder="Tell us in your own words..."></textarea>
-                </div>
-            </div>
-
-            <!-- SECTION 3: FEATURE PRIORITIES -->
-            <div class="question-container" id="q11">
-                <div class="question-header"><span class="section-label">Section 3 of 6 · What We Should Build</span>
-                </div>
-                <h2>How useful would EACH of these be to you? <span class="optional">(rate all five)</span></h2>
-
-                <div class="matrix-row">
-                    <p class="matrix-label">Automatic lesson plan generator</p>
-                    <div class="matrix-options">
-                        <label><input type="radio" name="q11_lesson" value="not" required> Not useful</label>
-                        <label><input type="radio" name="q11_lesson" value="somewhat"> Somewhat</label>
-                        <label><input type="radio" name="q11_lesson" value="very"> Very useful</label>
-                    </div>
-                </div>
-                <div class="matrix-row">
-                    <p class="matrix-label">Schemes of work builder</p>
-                    <div class="matrix-options">
-                        <label><input type="radio" name="q11_schemes" value="not" required> Not useful</label>
-                        <label><input type="radio" name="q11_schemes" value="somewhat"> Somewhat</label>
-                        <label><input type="radio" name="q11_schemes" value="very"> Very useful</label>
-                    </div>
-                </div>
-                <div class="matrix-row">
-                    <p class="matrix-label">Marks &amp; CA analysis</p>
-                    <div class="matrix-options">
-                        <label><input type="radio" name="q11_marks" value="not" required> Not useful</label>
-                        <label><input type="radio" name="q11_marks" value="somewhat"> Somewhat</label>
-                        <label><input type="radio" name="q11_marks" value="very"> Very useful</label>
-                    </div>
-                </div>
-                <div class="matrix-row">
-                    <p class="matrix-label">Automatic report card generation</p>
-                    <div class="matrix-options">
-                        <label><input type="radio" name="q11_reports" value="not" required> Not useful</label>
-                        <label><input type="radio" name="q11_reports" value="somewhat"> Somewhat</label>
-                        <label><input type="radio" name="q11_reports" value="very"> Very useful</label>
-                    </div>
-                </div>
-                <div class="matrix-row">
-                    <p class="matrix-label">Timetable generator</p>
-                    <div class="matrix-options">
-                        <label><input type="radio" name="q11_timetable" value="not" required> Not useful</label>
-                        <label><input type="radio" name="q11_timetable" value="somewhat"> Somewhat</label>
-                        <label><input type="radio" name="q11_timetable" value="very"> Very useful</label>
-                    </div>
-                </div>
-            </div>
-
-            <div class="question-container" id="q12">
-                <h2>If we could only release ONE feature first, which should it be?</h2>
-                <div class="form-group">
-                    <label class="radio-option"><input type="radio" name="q12_topfeature" value="lesson" required><span
-                            class="radio-text">Lesson plan generator</span></label>
-                    <label class="radio-option"><input type="radio" name="q12_topfeature" value="schemes"><span
-                            class="radio-text">Schemes of work builder</span></label>
-                    <label class="radio-option"><input type="radio" name="q12_topfeature" value="marks"><span
-                            class="radio-text">Marks &amp; CA analysis</span></label>
-                    <label class="radio-option"><input type="radio" name="q12_topfeature" value="reports"><span
-                            class="radio-text">Report card generation</span></label>
-                    <label class="radio-option"><input type="radio" name="q12_topfeature" value="timetable"><span
-                            class="radio-text">Timetable generator</span></label>
-                </div>
-            </div>
-
-            <div class="question-container" id="q13">
-                <h2>Is there any OTHER tool or feature you wish existed?</h2>
-                <div class="form-group">
-                    <textarea name="q13_otherfeatures" rows="3" class="textarea"
-                        placeholder="Your ideas help us..."></textarea>
-                </div>
-            </div>
-
-            <!-- SECTION 4: ACCESS & TECHNOLOGY -->
-            <div class="question-container" id="q14">
-                <div class="question-header"><span class="section-label">Section 4 of 6 · Access &amp; Technology</span>
-                </div>
-                <h2>Do you have reliable internet at school?</h2>
-                <div class="form-group">
-                    <label class="radio-option"><input type="radio" name="q14_internet" value="yes" required><span
-                            class="radio-text">Yes, reliable</span></label>
-                    <label class="radio-option"><input type="radio" name="q14_internet" value="sometimes"><span
-                            class="radio-text">Sometimes / unreliable</span></label>
-                    <label class="radio-option"><input type="radio" name="q14_internet" value="no"><span
-                            class="radio-text">No internet at school</span></label>
-                    <label class="radio-option"><input type="radio" name="q14_internet" value="own_data"><span
-                            class="radio-text">Only my own mobile data</span></label>
-                </div>
-            </div>
-
-            <div class="question-container" id="q15">
-                <h2>Which device would you MOST likely use EduPlan on?</h2>
-                <div class="form-group">
-                    <label class="radio-option"><input type="radio" name="q15_device" value="smartphone" required><span
-                            class="radio-text">Smartphone</span></label>
-                    <label class="radio-option"><input type="radio" name="q15_device" value="laptop"><span
-                            class="radio-text">Laptop</span></label>
-                    <label class="radio-option"><input type="radio" name="q15_device" value="tablet"><span
-                            class="radio-text">Tablet</span></label>
-                    <label class="radio-option"><input type="radio" name="q15_device" value="school_computer"><span
-                            class="radio-text">School computer</span></label>
-                </div>
-            </div>
-
-            <div class="question-container" id="q16">
-                <h2>Would you need EduPlan to work OFFLINE (without internet)?</h2>
-                <div class="form-group">
-                    <label class="radio-option"><input type="radio" name="q16_offline" value="essential" required><span
-                            class="radio-text">Yes — offline is essential for me</span></label>
-                    <label class="radio-option"><input type="radio" name="q16_offline" value="nice"><span
-                            class="radio-text">Nice to have, but not essential</span></label>
-                    <label class="radio-option"><input type="radio" name="q16_offline" value="no"><span
-                            class="radio-text">No — I always have internet</span></label>
-                </div>
-            </div>
-
-            <!-- SECTION 5: VALUE & ADOPTION -->
-            <div class="question-container" id="q17">
-                <div class="question-header"><span class="section-label">Section 5 of 6 · Value &amp; Adoption</span>
-                </div>
-                <h2>What would feel like a FAIR price per month for a tool that saves you hours every week?</h2>
-                <div class="form-group">
-                    <label class="radio-option"><input type="radio" name="q17_pay" value="free" required><span
-                            class="radio-text">Only if it's free</span></label>
-                    <label class="radio-option"><input type="radio" name="q17_pay" value="50"><span
-                            class="radio-text">Up to N$50</span></label>
-                    <label class="radio-option"><input type="radio" name="q17_pay" value="100"><span
-                            class="radio-text">N$100</span></label>
-                    <label class="radio-option"><input type="radio" name="q17_pay" value="150-200"><span
-                            class="radio-text">N$150-200</span></label>
-                    <label class="radio-option"><input type="radio" name="q17_pay" value="200+"><span
-                            class="radio-text">N$200+</span></label>
-                </div>
-            </div>
-
-            <div class="question-container" id="q18">
-                <h2>Do you think your SCHOOL would pay for it on your behalf?</h2>
-                <div class="form-group">
-                    <label class="radio-option"><input type="radio" name="q18_schoolpay" value="definitely"
-                            required><span class="radio-text">Definitely</span></label>
-                    <label class="radio-option"><input type="radio" name="q18_schoolpay" value="maybe"><span
-                            class="radio-text">Maybe</span></label>
-                    <label class="radio-option"><input type="radio" name="q18_schoolpay" value="unlikely"><span
-                            class="radio-text">Unlikely</span></label>
-                    <label class="radio-option"><input type="radio" name="q18_schoolpay" value="dontknow"><span
-                            class="radio-text">I don't know</span></label>
-                </div>
-            </div>
-
-            <div class="question-container" id="q19">
-                <h2>If EduPlan were ready today, how likely are you to start using it?</h2>
-                <div class="form-group rating-group">
-                    <label class="rating-option"><input type="radio" name="q19_uselikely" value="very_likely"
-                            required><span class="rating-text">Very likely</span></label>
-                    <label class="rating-option"><input type="radio" name="q19_uselikely" value="likely"><span
-                            class="rating-text">Likely</span></label>
-                    <label class="rating-option"><input type="radio" name="q19_uselikely" value="unsure"><span
-                            class="rating-text">Unsure</span></label>
-                    <label class="rating-option"><input type="radio" name="q19_uselikely" value="unlikely"><span
-                            class="rating-text">Unlikely</span></label>
-                </div>
-            </div>
-
-            <div class="question-container" id="q20">
-                <h2>What might STOP you from using EduPlan? <span class="optional">(select all that apply)</span></h2>
-                <div class="form-group">
-                    <label class="checkbox-option"><input type="checkbox" name="q20_barriers" value="cost"><span
-                            class="checkbox-text">Cost</span></label>
-                    <label class="checkbox-option"><input type="checkbox" name="q20_barriers" value="internet"><span
-                            class="checkbox-text">No internet / data</span></label>
-                    <label class="checkbox-option"><input type="checkbox" name="q20_barriers" value="device"><span
-                            class="checkbox-text">No suitable device</span></label>
-                    <label class="checkbox-option"><input type="checkbox" name="q20_barriers"
-                            value="tech_confidence"><span class="checkbox-text">Not confident with
-                            technology</span></label>
-                    <label class="checkbox-option"><input type="checkbox" name="q20_barriers" value="training"><span
-                            class="checkbox-text">Would need training</span></label>
-                    <label class="checkbox-option"><input type="checkbox" name="q20_barriers" value="school"><span
-                            class="checkbox-text">School wouldn't allow it</span></label>
-                    <label class="checkbox-option"><input type="checkbox" name="q20_barriers" value="trust"><span
-                            class="checkbox-text">Not sure I'd trust it yet</span></label>
-                    <label class="checkbox-option"><input type="checkbox" name="q20_barriers" value="none"><span
-                            class="checkbox-text">Nothing — I'm ready</span></label>
-                </div>
-            </div>
-
-            <div class="question-container" id="q21">
-                <h2>Would you recommend a tool like this to other teachers?</h2>
-                <div class="form-group rating-group">
-                    <label class="rating-option"><input type="radio" name="q21_recommend" value="definitely"
-                            required><span class="rating-text">Definitely</span></label>
-                    <label class="rating-option"><input type="radio" name="q21_recommend" value="probably"><span
-                            class="rating-text">Probably</span></label>
-                    <label class="rating-option"><input type="radio" name="q21_recommend" value="maybe"><span
-                            class="rating-text">Maybe</span></label>
-                    <label class="rating-option"><input type="radio" name="q21_recommend" value="no"><span
-                            class="rating-text">No</span></label>
-                </div>
-            </div>
-
-            <!-- SECTION 6: PILOT & FINAL -->
-            <div class="question-container" id="q22">
-                <div class="question-header"><span class="section-label">Section 6 of 6 · Almost Done</span></div>
-                <h2>We're planning a FREE early pilot. Would you be interested in joining one day?</h2>
-                <p class="note">This stays anonymous. If you'd like to take part, simply contact us directly at
-                    <strong>eduplan@yahoo.com</strong> or <strong>+264 81 864 7106</strong> — we never capture your
-                    details here.
-                </p>
-                <div class="form-group">
-                    <label class="radio-option"><input type="radio" name="q22_pilot" value="yes" required><span
-                            class="radio-text">Yes, I'm very interested</span></label>
-                    <label class="radio-option"><input type="radio" name="q22_pilot" value="maybe"><span
-                            class="radio-text">Maybe — I'd like to know more</span></label>
-                    <label class="radio-option"><input type="radio" name="q22_pilot" value="no"><span
-                            class="radio-text">No thanks</span></label>
-                </div>
-            </div>
-
-            <div class="question-container" id="q23">
-                <h2>Any final comments for the EduPlan team?</h2>
-                <div class="form-group">
-                    <textarea name="q23_comments" rows="3" class="textarea"
-                        placeholder="Anything else you'd like us to know..."></textarea>
-                </div>
-            </div>
-
-            <div class="form-actions">
-                <button type="submit" class="btn-submit" id="submitBtn">Submit Survey</button>
-                <p class="form-hint">Anonymous &amp; secure · No personal information is collected.</p>
-            </div>
-        </form>
-
-        <div class="success-message" id="successMessage" style="display:none;">
-            <div class="success-content">
-                <h2>✓ Thank You!</h2>
-                <p>Your anonymous responses have been received.</p>
-                <p>You are helping build a tool made for Namibian teachers, by people who understand the classroom.</p>
-                <p style="margin-top:20px; font-size:14px; color:#666;">
-                    EduPlan Namibia · Lifa-Kay Investment CC<br>
-                    https://eduplan.linusite.com<br>
-                    +264 81 864 7106 · eduplan@yahoo.com
-                </p>
-            </div>
-        </div>
-    </div>
-    <script src="script.js"></script>
+        <script src="script.js"></script>
 </body>
 
 </html>
