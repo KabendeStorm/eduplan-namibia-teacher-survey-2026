@@ -1,0 +1,454 @@
+/* ============================================
+   EduPlan Namibia — Teacher Needs Survey
+   Brand: Navy #003366 | Gold #F4C430
+   ============================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e8eef5 100%);
+    color: #333;
+    line-height: 1.6;
+    padding: 20px 10px;
+}
+
+.container {
+    max-width: 720px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0, 51, 102, 0.12);
+    overflow: hidden;
+}
+
+/* HEADER */
+.header {
+    background: linear-gradient(135deg, #003366 0%, #004080 100%);
+    color: #fff;
+    padding: 32px 30px 28px;
+    text-align: center;
+}
+
+.logo-card {
+    display: inline-block;
+    background: #fff;
+    padding: 12px 16px;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+    margin-bottom: 16px;
+}
+
+.logo-img {
+    display: block;
+    width: 130px;
+    height: auto;
+}
+
+.header h2 {
+    font-size: 21px;
+    font-weight: 600;
+    color: #F4C430;
+    margin-bottom: 6px;
+}
+
+.subtitle {
+    font-size: 14px;
+    opacity: 0.92;
+    font-weight: 300;
+}
+
+/* PRIVACY DISCLAIMER */
+.disclaimer {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    margin: 22px 30px 0;
+    padding: 16px 18px;
+    background: #f3f8f3;
+    border: 1px solid #cfe6d2;
+    border-left: 5px solid #2e9e54;
+    border-radius: 10px;
+}
+
+.disclaimer-icon {
+    font-size: 22px;
+    line-height: 1.2;
+    flex-shrink: 0;
+}
+
+.disclaimer-text {
+    font-size: 13px;
+    color: #2c4a35;
+    line-height: 1.55;
+}
+
+.disclaimer-text strong {
+    color: #1f6b3a;
+}
+
+/* PROGRESS */
+.progress-container {
+    padding: 20px 30px 0;
+}
+
+.progress-bar {
+    height: 8px;
+    background: #e0e6ed;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #F4C430 0%, #ffd75e 100%);
+    border-radius: 10px;
+    transition: width 0.4s ease;
+}
+
+.progress-text {
+    text-align: center;
+    font-size: 13px;
+    color: #667;
+    margin-top: 8px;
+    font-weight: 600;
+}
+
+/* FORM */
+.survey-form {
+    padding: 20px 30px 30px;
+}
+
+.question-container {
+    padding: 22px 0;
+    border-bottom: 1px solid #eef2f6;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.question-header {
+    margin-bottom: 4px;
+}
+
+.section-label {
+    display: inline-block;
+    background: #003366;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.question-container h2 {
+    font-size: 17px;
+    color: #003366;
+    margin-bottom: 14px;
+    font-weight: 600;
+}
+
+.optional {
+    font-size: 13px;
+    font-weight: 400;
+    color: #889;
+}
+
+.note {
+    font-size: 13px;
+    color: #667;
+    background: #fffdf3;
+    border: 1px dashed #f0d488;
+    border-radius: 8px;
+    padding: 10px 12px;
+    margin-bottom: 14px;
+}
+
+.note strong {
+    color: #003366;
+}
+
+.form-group {
+    margin-bottom: 12px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+/* RADIO & CHECKBOX */
+.radio-option,
+.checkbox-option {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    margin-bottom: 8px;
+    background: #f8fafc;
+    border: 2px solid #e8eef5;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.radio-option:hover,
+.checkbox-option:hover {
+    border-color: #F4C430;
+    background: #fffdf5;
+}
+
+.radio-option input,
+.checkbox-option input {
+    margin-right: 12px;
+    width: 18px;
+    height: 18px;
+    accent-color: #003366;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.radio-option:has(input:checked),
+.checkbox-option:has(input:checked) {
+    border-color: #003366;
+    background: #eef4fb;
+}
+
+.radio-option input:checked~.radio-text,
+.checkbox-option input:checked~.checkbox-text {
+    color: #003366;
+    font-weight: 600;
+}
+
+.radio-text,
+.checkbox-text {
+    font-size: 14px;
+    color: #444;
+}
+
+/* MATRIX */
+.matrix-row {
+    padding: 12px 14px;
+    margin-bottom: 10px;
+    background: #f8fafc;
+    border: 2px solid #e8eef5;
+    border-radius: 10px;
+}
+
+.matrix-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #003366;
+    margin-bottom: 8px;
+}
+
+.matrix-options {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.matrix-options label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    color: #555;
+    font-weight: 500;
+    margin: 0;
+    cursor: pointer;
+}
+
+.matrix-options input {
+    accent-color: #003366;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+/* RATING */
+.rating-group {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.rating-option {
+    flex: 1;
+    min-width: 90px;
+    text-align: center;
+    padding: 14px 8px;
+    background: #f8fafc;
+    border: 2px solid #e8eef5;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.rating-option:hover {
+    border-color: #F4C430;
+}
+
+.rating-option input {
+    display: block;
+    margin: 0 auto 6px;
+    accent-color: #003366;
+}
+
+.rating-option:has(input:checked) {
+    border-color: #003366;
+    background: #eef4fb;
+}
+
+.rating-text {
+    font-size: 13px;
+    font-weight: 600;
+    color: #444;
+}
+
+/* INPUTS */
+.input,
+.textarea,
+.select {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 14px;
+    font-family: inherit;
+    border: 2px solid #e8eef5;
+    border-radius: 10px;
+    background: #f8fafc;
+    transition: all 0.2s ease;
+    color: #333;
+}
+
+.input:focus,
+.textarea:focus,
+.select:focus {
+    outline: none;
+    border-color: #003366;
+    background: #fff;
+}
+
+.textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+/* SUBMIT */
+.form-actions {
+    padding: 30px 0 10px;
+    text-align: center;
+}
+
+.btn-submit {
+    background: linear-gradient(135deg, #003366 0%, #004080 100%);
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 16px 50px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 20px rgba(0, 51, 102, 0.3);
+}
+
+.btn-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 26px rgba(0, 51, 102, 0.4);
+}
+
+.btn-submit:active {
+    transform: translateY(0);
+}
+
+.btn-submit:disabled {
+    background: #99a;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.form-hint {
+    margin-top: 14px;
+    font-size: 13px;
+    color: #889;
+}
+
+/* SUCCESS */
+.success-message {
+    padding: 60px 30px;
+    text-align: center;
+    animation: fadeIn 0.5s ease;
+}
+
+.success-content h2 {
+    color: #003366;
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+
+.success-content p {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    body {
+        padding: 10px 5px;
+    }
+
+    .header {
+        padding: 26px 20px 22px;
+    }
+
+    .logo-img {
+        width: 110px;
+    }
+
+    .disclaimer {
+        margin: 18px 16px 0;
+    }
+
+    .survey-form {
+        padding: 16px 18px 24px;
+    }
+
+    .question-container h2 {
+        font-size: 16px;
+    }
+
+    .rating-option {
+        min-width: 70px;
+    }
+
+    .matrix-options {
+        gap: 10px;
+    }
+
+    .btn-submit {
+        padding: 14px 36px;
+        font-size: 16px;
+    }
+}
