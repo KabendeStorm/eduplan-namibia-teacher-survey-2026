@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WiFi Voucher Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <h1>WiFi Access Voucher Dashboard</h1>
+    <p class="subtitle">Generate timed access codes and monitor connected clients</p>
+</header>
+
+<main>
+    <section id="active-panel" class="panel">
+        <h2>Connected Now</h2>
+        <div id="active-list" class="active-list">
+            <p class="empty">No clients currently connected.</p>
+        </div>
+    </section>
+
+    <section id="slots" class="slots"></section>
+</main>
+
+<div id="toast" class="toast hidden"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
